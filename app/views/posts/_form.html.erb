@@ -18,6 +18,10 @@
     <%= f.label :content %><br />
     <%= f.text_field :content %>
   </div>
+  <div class="field">
+    <%= f.label :tag_list, "Tags (separated by commas)" %><br />
+    <%= f.text_field :tag_list %>
+  </div>
   <div class=“field”>
     <%= f.label :author_ids, "Authors" %> <br/>
     <%= f.collection_select :author_ids, Author.order(:name), :id, :name, {}, {multiple: true} %>

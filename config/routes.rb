@@ -1,9 +1,8 @@
 InheritedResource::Application.routes.draw do
  
   resources :authors
-
-
   resources :posts
+  get 'tags/:tag', to: 'posts#index', as: :tag
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
