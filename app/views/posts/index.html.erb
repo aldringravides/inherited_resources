@@ -23,13 +23,3 @@
 <br />
 
 <%= link_to 'New Post', new_post_path %>
-
-<br/>
-
-<%= select_tag(:filter,
-          options_for_select([["Learned","learned"],["Not Learned","unlearned"]]),
-          {prompt: "All"})%>
-
-<%= select_tag(:filter,
-          options_for_select([["Learned","learned"],["Not Learned","unlearned"]]),
-          {prompt: "All", class: "chosen-select"})%>

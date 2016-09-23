@@ -10,7 +10,6 @@
       </ul>
     </div>
   <% end %>
-
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
@@ -19,7 +18,12 @@
     <%= f.label :content %><br />
     <%= f.text_field :content %>
   </div>
+  <div class=“field”>
+    <%= f.label :author_ids, "Authors" %> <br/>
+    <%= f.collection_select :author_ids, Author.order(:name), :id, :name, {}, {multiple: true} %>
+  </div>
   <div class="actions">
+    <br/>
     <%= f.submit %>
   </div>
 <% end %>

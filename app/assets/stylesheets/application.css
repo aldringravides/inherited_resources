@@ -12,3 +12,7 @@
  *= require chosen
  *= require_tree .
  */
+
+#post_author_ids {
+	width: 450px;
+}

@@ -15,4 +15,3 @@
 //= require chosen-jquery
 //= require scaffold
 //= require_tree .
-

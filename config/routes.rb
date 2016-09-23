@@ -1,5 +1,8 @@
 InheritedResource::Application.routes.draw do
  
+  resources :authors
+
+
   resources :posts
 
   # The priority is based upon order of creation:
