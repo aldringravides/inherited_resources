@@ -25,6 +25,11 @@ gem 'jquery-rails'
 gem 'chosen-rails'
 gem 'acts-as-taggable-on'
 
+# September 27, 2016
+
+gem 'rqrcode-rails3'
+gem 'mini_magick'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

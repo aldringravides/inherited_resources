@@ -21,3 +21,19 @@
 <br />
 
 <%= link_to 'New Author', new_author_path %>
+
+(<%= qrcode %>)
+
+<table class="qr-code">
+<% @qr.modules.each_index do |x| %>
+  <tr>
+  <% @qr.modules.each_index do |y| %>
+   <% if @qr.dark?(x,y) %>
+    <td class="black"/>
+   <% else %>
+    <td class="white"/>
+   <% end %>
+  <% end %>
+  </tr>
+<% end %>
+</table>
